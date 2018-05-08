@@ -35,7 +35,7 @@ prof.save()
 class  ProfessoresResource(Resource):
     document = Professor
 @api.register(name='professore', url='/professor/consulta/')
-class EquipamentosView(ResourceView):
+class ProfessoresView(ResourceView):
     resource = ProfessoresResource
     methods = [methods.Create, methods.Update, methods.Fetch, methods.List]
 
